@@ -1,0 +1,19 @@
+{
+  "name": "gen-repl",
+  "version": "1.0.0",
+  "description": "A node.js repl that supports yield and yield* directly from the input command line.",
+  "keywords": [ "repl", "generator", "functions", "yield" ],
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Adams",
+  "license": "ISC",
+  "dependencies": {
+    "escodegen": "^1.8.1",
+    "escope": "^3.6.0",
+    "esprima": "^2.7.2",
+    "q": "1.4.1",
+    "repl.history": "0.1.3"
+  }
+}
