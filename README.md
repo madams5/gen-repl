@@ -1,4 +1,12 @@
-# gen-repl (v1.0.0)
+# gen-repl (v1.0.3)
+
+### Installation
+
+`npm install -g gen-repl`
+
+### Usage
+
+`$ gen-repl`
 
 Gen-repl is a nodejs REPL (read-eval-print loop) that supports yield and yield\* from the command line.
 

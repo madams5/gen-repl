@@ -46,24 +46,24 @@ function localEval (cmd, context, filename, callback) {
 	}
 
 	functionBlockStatement.body.push({
-        type: 'ExpressionStatement',
-        expression: {
-          	type: 'CallExpression',
-          	callee: {
-	            type: 'MemberExpression',
-	            computed: false,
-	            object: {
-	              	type: 'Identifier',
-	              	name: '__localEvalPromise'
-	            },
-	            property: {
-	              	type: 'Identifier',
-	              	name: 'resolve'
-	            }
-          	},
-          	arguments: []
-        }
-    });
+		type: 'ExpressionStatement',
+		expression: {
+			type: 'CallExpression',
+			callee: {
+				type: 'MemberExpression',
+				computed: false,
+				object: {
+					type: 'Identifier',
+					name: '__localEvalPromise'
+				},
+				property: {
+					type: 'Identifier',
+					name: 'resolve'
+				}
+			},
+			arguments: []
+		}
+	});
 
 	let currentScope = escope.analyze(parsed);
 	for ( let i = 0 ; i < currentScope.scopes[1].variables.length ; i++ ) {
